@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonForAddMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/button_for_add_multiple" />
+
+    <Button
+        android:id="@+id/buttonForDeleteMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/button_for_delete_multiple" />
+
+    <Button
+        android:id="@+id/buttonForAddOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/button_for_add_one" />
+
+    <Button
+        android:id="@+id/buttonForDeleteOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/button_for_delete_one" />
+
+
+</LinearLayout>

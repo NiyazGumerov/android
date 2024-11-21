@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button_for_add_multiple">Add multiple</string>
+    <string name="button_for_delete_multiple">Delete multiple</string>
+    <string name="button_for_add_one">Add one</string>
+    <string name="button_for_delete_one">Delete one</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
