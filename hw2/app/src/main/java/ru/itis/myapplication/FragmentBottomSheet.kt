@@ -6,17 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
-import androidx.customview.widget.ViewDragHelper.Callback
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import ru.itis.myapplication.InformationRepository.addRandomInformationToList
 import ru.itis.myapplication.InformationRepository.deleteRandomInformation
 
 
-
-
-class FragmentBottomSheet(val updateRecyclerItems:()-> Unit) : BottomSheetDialogFragment() {
+class FragmentBottomSheet(val updateRecyclerItems: () -> Unit) : BottomSheetDialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -30,7 +26,7 @@ class FragmentBottomSheet(val updateRecyclerItems:()-> Unit) : BottomSheetDialog
         val text = v.findViewById<EditText>(R.id.editTextNumber)
         val button_for_add_multiple = v.findViewById<Button>(R.id.buttonForAddMultiple)
         val button_for_delete_multiple = v.findViewById<Button>(R.id.buttonForDeleteMultiple)
-        val button_for_add_one= v.findViewById<Button>(R.id.buttonForAddOne)
+        val button_for_add_one = v.findViewById<Button>(R.id.buttonForAddOne)
         val button_for_delete_one = v.findViewById<Button>(R.id.buttonForDeleteOne)
         button_for_add_multiple.isEnabled = false
         button_for_delete_multiple.isEnabled = false
@@ -47,18 +43,18 @@ class FragmentBottomSheet(val updateRecyclerItems:()-> Unit) : BottomSheetDialog
             addRandomInformationToList()
             updateRecyclerItems()
         }
-        button_for_delete_one.setOnClickListener{
+        button_for_delete_one.setOnClickListener {
             deleteRandomInformation()
             updateRecyclerItems()
         }
-        button_for_add_multiple.setOnClickListener{
+        button_for_add_multiple.setOnClickListener {
             val number = text.text.toString().toInt()
             repeat(number) {
                 addRandomInformationToList()
             }
             updateRecyclerItems()
         }
-        button_for_delete_multiple.setOnClickListener{
+        button_for_delete_multiple.setOnClickListener {
             val number = text.text.toString().toInt()
             repeat(number) {
                 deleteRandomInformation()
@@ -70,7 +66,4 @@ class FragmentBottomSheet(val updateRecyclerItems:()-> Unit) : BottomSheetDialog
         return v
     }
 
-    override fun dismiss() {
-        super.dismiss()
-    }
 }

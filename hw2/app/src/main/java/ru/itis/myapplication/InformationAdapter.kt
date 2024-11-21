@@ -8,9 +8,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
-import androidx.customview.widget.ViewDragHelper.Callback
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 
@@ -43,6 +40,7 @@ class InformationAdapter(
         }
 
     }
+
     override fun getItemViewType(position: Int): Int {
         return dataSet[position].type
     }
@@ -64,7 +62,7 @@ class InformationAdapter(
     override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, position: Int) {
         val item = dataSet[position]
         if (viewHolder is ViewHolder1 && item is Information) {
-            viewHolder.card.setOnClickListener{
+            viewHolder.card.setOnClickListener {
                 navigateToRecyclerItem(position)
             }
             viewHolder.text.text = item.text
