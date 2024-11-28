@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Home Work 3</string>
     <string name="next_btn">Next</string>
+    <string name="result_btn">Result</string>
     <string name="prev_btn">Previous</string>
+    <string name="result_text">Результаты сохранены</string>
 </resources>
