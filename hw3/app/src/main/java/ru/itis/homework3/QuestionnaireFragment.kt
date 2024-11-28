@@ -24,12 +24,13 @@ class QuestionnaireFragment : Fragment(R.layout.fragment_questionnaire) {
             )
         }
 
-        val currentItem = viewBinding.viewPager.currentItem
 
         viewBinding.viewPager.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
+                val currentItem = viewBinding.viewPager.currentItem
+
                 viewBinding.nextBtn.isEnabled =
                     position < (viewBinding.viewPager.adapter?.itemCount ?: 0) - 1
 
@@ -42,11 +43,11 @@ class QuestionnaireFragment : Fragment(R.layout.fragment_questionnaire) {
         })
 
         viewBinding.nextBtn.setOnClickListener {
-            viewBinding.viewPager.setCurrentItem(currentItem + 1, true)
+            viewBinding.viewPager.setCurrentItem(viewBinding.viewPager.currentItem + 1, true)
         }
 
         viewBinding.previousBtn.setOnClickListener {
-            viewBinding.viewPager.setCurrentItem(currentItem - 1, true)
+            viewBinding.viewPager.setCurrentItem(viewBinding.viewPager.currentItem - 1, true)
         }
 
     }
