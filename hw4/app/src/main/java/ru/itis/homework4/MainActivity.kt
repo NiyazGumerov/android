@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         requestNotificationPermission()
 
         if (intent.getBooleanExtra("fromNotification", false)) {
-            showToast("@string/notification_clicked")
+            showToast(getString(R.string.notification_clicked))
         }
 
         with(viewBinding) {
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
             rvThemeColors.adapter = adapter
 
-            cvRecyclerView.setOnClickListener{
+            cvRecyclerView.setOnClickListener {
                 if (rvThemeColors.visibility == View.VISIBLE) {
                     rvThemeColors.visibility = View.GONE
                 } else {
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
             cvAvatar.setOnClickListener {
                 if (ivAvatar.visibility == View.VISIBLE) {
-                    showToast("@string/picture_already_opened")
+                    showToast(getString(R.string.picture_already_opened))
                 } else {
                     ivAvatar.visibility = View.VISIBLE
                     btnCloseImage.visibility = View.VISIBLE
@@ -93,11 +93,11 @@ class MainActivity : AppCompatActivity() {
                 val title = notificationTitle.text.toString()
                 val message = notificationMessage.text.toString()
                 if (title.isEmpty() && message.isEmpty()) {
-                    showToast("@string/without_message_and_title_error")
+                    showToast(getString(R.string.without_message_and_title_error))
                 } else if (title.isEmpty()) {
-                    showToast("@string/without_title_error")
+                    showToast(getString(R.string.without_title_error))
                 } else if (message.isEmpty()) {
-                    showToast("@string/without_message_error")
+                    showToast(getString(R.string.without_message_error))
                 } else {
                     sendNotification(
                         notificationPriority.selectedItemPosition,
