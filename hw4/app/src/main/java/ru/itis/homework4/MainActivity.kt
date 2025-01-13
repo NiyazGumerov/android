@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         requestNotificationPermission()
 
         if (intent.getBooleanExtra("fromNotification", false)) {
-            showToast("Вы перешли из уведомления")
+            showToast("@string/notification_clicked")
         }
 
         with(viewBinding) {
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
             cvAvatar.setOnClickListener {
                 if (ivAvatar.visibility == View.VISIBLE) {
-                    showToast("Изображение уже открыто")
+                    showToast("@string/picture_already_opened")
                 } else {
                     ivAvatar.visibility = View.VISIBLE
                     btnCloseImage.visibility = View.VISIBLE
@@ -93,11 +93,11 @@ class MainActivity : AppCompatActivity() {
                 val title = notificationTitle.text.toString()
                 val message = notificationMessage.text.toString()
                 if (title.isEmpty() && message.isEmpty()) {
-                    showToast("Заполните заголовок и текст уведомления")
+                    showToast("@string/without_message_and_title_error")
                 } else if (title.isEmpty()) {
-                    showToast("Заполните заголовок уведомления")
+                    showToast("@string/without_title_error")
                 } else if (message.isEmpty()) {
-                    showToast("Заполните текст уведомления")
+                    showToast("@string/without_message_error")
                 } else {
                     sendNotification(
                         notificationPriority.selectedItemPosition,

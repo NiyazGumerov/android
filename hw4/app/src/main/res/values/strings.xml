@@ -13,4 +13,10 @@
     </string-array>
     <string name="notification_channel_description">Описание канала уведомлений</string>
     <string name="btn_close_image_text">X</string>
+    <string name="without_title_error">Введите заголовок уведомления</string>
+    <string name="without_message_error">Введите сообщение уведомления</string>
+    <string name="without_message_and_title_error">Введите сообщение и заголовок уведомления</string>
+    <string name="picture_already_opened">Изображение уже открыто</string>
+    <string name="notification_clicked">Вы перешли из уведомления</string>
+
 </resources>
