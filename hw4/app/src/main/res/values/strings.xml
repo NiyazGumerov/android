@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Home Work 4</string>
+    <string name="title_help_text">Заголовок уведомления</string>
+    <string name="hint_text">Введите текст</string>
+    <string name="message_help_text">Сообщение уведомления</string>
+    <string name="btn_show_notification_text">Показать уведомление</string>
+    <string name="btn_reset_color_text">Сбросить цвет</string>
+    <string-array name="priority_array">
+        <item>Низкий</item>
+        <item>Средний</item>
+        <item>Высокий</item>
+        <item>Максимальный</item>
+    </string-array>
+    <string name="notification_channel_description">Описание канала уведомлений</string>
+    <string name="btn_close_image_text">X</string>
+    <string name="without_title_error">Введите заголовок уведомления</string>
+    <string name="without_message_error">Введите сообщение уведомления</string>
+    <string name="without_message_and_title_error">Введите сообщение и заголовок уведомления</string>
+    <string name="picture_already_opened">Изображение уже открыто</string>
+    <string name="notification_clicked">Вы перешли из уведомления</string>
+
+</resources>
