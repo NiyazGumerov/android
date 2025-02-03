@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Home Work 5</string>
+    <string name="courutines_count">Введите кол-во корутин</string>
+    <string name="how_to_launch_coroutines_question">Как будут запущены корутины:</string>
+    <string name="how_to_launch_coroutines_variant_first">Последовательно</string>
+    <string name="how_to_launch_coroutines_variant_second">Параллельно</string>
+    <string name="logic_of_coroutines_question">Логика работы корутин:</string>
+    <string name="logic_of_coroutines_variant_first">Отменять при сворачивании</string>
+    <string name="logic_of_coroutines_variant_second">Продолжать работу, когда свернуто</string>
+    <string name="select_the_thread_pool_question">Выберите пул поток, в котором будут исполняться корутины:</string>
+    <string name="select_the_thread_pool_variant_first">Default</string>
+    <string name="select_the_thread_pool_variant_second">Main</string>
+    <string name="select_the_thread_pool_variant_third">Unconfined</string>
+    <string name="select_the_thread_pool_variant_fourth">IO</string>
+    <string name="start_coroutines_btn">Запуск</string>
+    <string name="cancel_coroutines_btn">Отмена</string>
+    <string name="request_permission_notifications_title">Необходимо разрешение</string>
+    <string name="request_permission_notifications_message">Необходимо разрешение на отправку уведомлений</string>
+    <string name="request_permission_notifications_positive_button">Открыть настройки</string>
+    <string name="request_permission_notifications_negative_button">Отмена</string>
+    <string name="canceled">Отменено: %d</string>
+    <string name="no_active_coroutines">Нет активных корутин</string>
+</resources>
