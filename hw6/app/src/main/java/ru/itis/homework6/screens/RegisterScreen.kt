@@ -139,13 +139,13 @@ fun RegisterScreen(navController: NavController) {
 
                 else -> {
                     coroutineScope.launch {
-                        val userId = UUID.randomUUID().toString()
                         if (userRepository.getUserByUsername(username = username) == null) {
                             userRepository.saveUser(
                                 username = username,
                                 email = email,
                                 password = password
                             )
+                            val userId = userRepository.getUserByUsername(username = username)!!.id
                             (context.applicationContext as App).getPreferences()?.edit()?.let {
                                 it.putString(USER_ID_KEY, userId)
                                 it.commit()
