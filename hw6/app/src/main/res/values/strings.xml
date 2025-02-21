@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Homework 6</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="email">Электронная почта</string>
+    <string name="login">Войти</string>
+    <string name="entrance">Вход</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="registration">Регистрация</string>
+    <string name="logout">Выйти из профиля</string>
+    <string name="username_is_empty">Имя пользователя не может быть пустым</string>
+    <string name="password_is_empty">Пароль не может быть пустым</string>
+    <string name="email_is_empty">Электронная почта не может быть пустой</string>
+    <string name="wrong_email_format">Введите корректную электронную почту</string>
+    <string name="wrong_password_format">Пароль должен содержать не менее 8 символов</string>
+    <string name="wrong_username_format">Имя пользователя может содержать только латинские буквы и цифры</string>
+    <string name="user_already_exists">Пользователь с таким именем уже существует</string>
+    <string name="incorrect_login_or_password">Неверный логин или пароль</string>
+
+    <string name="track_name">Название трека</string>
+    <string name="track_name_is_empty">Название трека не может быть пустым</string>
+    <string name="artist">Исполнитель</string>
+    <string name="artist_is_empty">Исполнитель не может быть пустым</string>
+    <string name="release_date">Дата выхода</string>
+    <string name="release_date_is_empty">Дата выхода не может быть пустой</string>
+    <string name="duration">Длительность (минуты:секунды)</string>
+    <string name="duration_is_empty">Длительность не может быть пустой</string>
+    <string name="add">Добавить</string>
+    <string name="add_new_track">Добавить новый трек</string>
+    <string name="add_new_artist">Добавить нового исполнителя</string>
+    <string name="add_favorite">Добавить в избранное</string>
+    <string name="artists_list">Список исполнителей</string>
+    <string name="back">Назад</string>
+    <string name="recomendations">Рекомендации</string>
+
+    <string name="select_date">Выбор даты</string>
+    <string name="delete">Удалить</string>
+</resources>
